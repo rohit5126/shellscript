@@ -73,6 +73,7 @@ chmod +x log_report.sh
 ### 3. Run the log_generator.sh  and log_report.sh
 
 '''bash
+
 ./log_generator.sh /home/ubuntu/shellscript/log_gen_report/serverlogs/systemlogs.log 250
 
 Log file created at: /home/ubuntu/shellscript/log_gen_report/serverlogs/systemlogs.log with 250 lines.
@@ -164,8 +165,7 @@ Lno. Date       Time      Event      ID
 237:2026-06-10 07:51:39 - 11618 - [CRITICAL]  
 245:2026-06-10 07:51:39 - 25099 - [CRITICAL]  
 246:2026-06-10 07:51:39 - 14924 - [CRITICAL]
-
----
+```
 
 ## 🧠 How It Works
 
@@ -178,7 +178,7 @@ Contains reusable functions:
 * `criticalevent()` → Lists CRITICAL events with line numbers
 * `topmess()` → Extracts top repeated ERROR messages
 
----
+
 
 ### 🔹 `log_report.sh`
 
@@ -199,14 +199,12 @@ Main execution script:
 /home/ubuntu/serverlog/log_report_<date>.txt
 ```
 
----
-
 ## 👨‍💻 Author
 
 **Rohit**
 🔗 GitHub: https://github.com/rohit5126
 
----
+
 
 ## ⭐ Support
 
