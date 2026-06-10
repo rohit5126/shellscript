@@ -77,6 +77,8 @@ chmod +x log_report.sh
 
 Log file created at: /home/ubuntu/shellscript/log_gen_report/serverlogs/systemlogs.log with 250 lines.
 
+```
+
 ```bash
 
 ./log_report.sh /home/ubuntu/shellscript/log_gen_report/serverlogs/systemlogs.log
@@ -161,8 +163,8 @@ Lno. Date       Time      Event      ID
 236:2026-06-10 07:51:39 - 31438 - [CRITICAL]  
 237:2026-06-10 07:51:39 - 11618 - [CRITICAL]  
 245:2026-06-10 07:51:39 - 25099 - [CRITICAL]  
-246:2026-06-10 07:51:39 - 14924 - [CRITICAL]  
----------------------------------------------------------------------------------------
+246:2026-06-10 07:51:39 - 14924 - [CRITICAL]
+
 ---
 
 ## 🧠 How It Works
