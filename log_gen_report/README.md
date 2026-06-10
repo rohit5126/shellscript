@@ -82,9 +82,9 @@ Log file created at: /home/ubuntu/shellscript/log_gen_report/serverlogs/systemlo
 
 ```bash
 
-./log_report.sh /home/ubuntu/shellscript/log_gen_report/serverlogs/systemlogs.log
+./log_report.sh /home/ubuntu/shellscript/log_gen_report/serverlogs/systemlogs.log /home/ubuntu/shellscript/log_gen_report/archive/
 
-ubuntu@ip-172-31-16-15:~/shellscript/log_gen_report$ ./log_report.sh /home/ubuntu/shellscript/log_gen_report/serverlogs/systemlogs.log
+ubuntu@ip-172-31-16-15:~/shellscript/log_gen_report$ ./log_report.sh /home/ubuntu/shellscript/log_gen_report/serverlogs/systemlogs.log /home/ubuntu/shellscript/log_gen_report/archive/
  
  
 file exists working on analysis ...... 
@@ -92,8 +92,11 @@ file exists working on analysis ......
  
 
 report generated successfully and file stored in /home/ubuntu/shellscript/log_gen_report/serverlogs/log_report_2026-06-10.txt
+backup generated successfully and stored in /home/ubuntu/shellscript/log_gen_report/archive/
+log file removed successfully as backup is created
 ```
 
+## It can be setup as a CronJob
 
 
 ## 📊 Sample Output
@@ -177,8 +180,8 @@ Contains reusable functions:
 * `errorcount()` → Counts occurrences of ERROR logs
 * `criticalevent()` → Lists CRITICAL events with line numbers
 * `topmess()` → Extracts top repeated ERROR messages
-
-
+* `archive()` → take compressed backup of the log report file.
+* `delete_log()` → deletes log file so that next day a new log file can be generate.
 
 ### 🔹 `log_report.sh`
 
@@ -198,6 +201,14 @@ Main execution script:
 ```
 /home/ubuntu/serverlog/log_report_<date>.txt
 ```
+
+* takes backup of the report in:
+
+```
+/home/ubuntu/shellscript/log_gen_report/archive/
+```
+
+* deletes the log file
 
 ## 👨‍💻 Author
 
