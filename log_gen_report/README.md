@@ -96,8 +96,17 @@ backup generated successfully and stored in /home/ubuntu/shellscript/log_gen_rep
 log file removed successfully as backup is created
 ```
 
-## It can be setup as a CronJob
+## ⏰ Automating with Cron Job
 
+```
+crontab -e
+
+#update crontab as shown below in the image.
+```
+
+<img width="1917" height="407" alt="image" src="https://github.com/user-attachments/assets/fd37c263-df9e-4ed5-b4b8-84cd8919d4db" />
+ 
+**this will run the script at 1 am midnight time.
 
 ## 📊 Sample Output
 
