@@ -106,7 +106,7 @@ crontab -e
 
 <img width="1917" height="407" alt="image" src="https://github.com/user-attachments/assets/fd37c263-df9e-4ed5-b4b8-84cd8919d4db" />
  
-**this will run the script at 1 am midnight time.
+**this will run the script at 1 am midnight time.**
 
 ## 📊 Sample Output
 
