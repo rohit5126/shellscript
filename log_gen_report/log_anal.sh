@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -e
 
 function inputval(){
         local log_file=$1
@@ -45,3 +46,18 @@ function topmess(){
         echo ""
 }
 
+d=$(date '+%Y-%m-%d')
+
+function archive(){
+	tar -cvzf "$1/backup_$d.gz" "$2" > /dev/null 2>&1
+	echo "backup generated successfully and stored in $1"
+}
+
+function delete_log(){
+	if [ -e "$1/backup_$d.gz" ]; then
+		rm $2
+		echo "log file removed successfully as backup is created"
+	else
+		echo "backup file does not exist do not exist"
+	fi
+}

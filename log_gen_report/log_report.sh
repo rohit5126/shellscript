@@ -32,5 +32,9 @@ topmess ERROR $file >> $path
 
 criticalevent CRITICAL $file >> $path
 
+
 echo "report generated successfully and file stored in $path"
 
+archive $2 $path
+
+delete_log $2 $file
