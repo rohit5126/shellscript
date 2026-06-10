@@ -72,7 +72,7 @@ chmod +x log_report.sh
 
 ### 3. Run the log_generator.sh  and log_report.sh
 
-'''bash
+```bash
 
 ./log_generator.sh /home/ubuntu/shellscript/log_gen_report/serverlogs/systemlogs.log 250
 
